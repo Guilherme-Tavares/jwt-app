@@ -19,7 +19,7 @@ Projeto mínimo demonstrando autenticação com **JWT**.
 ```bash
 cd server
 npm install
-# copie .env.example para .env e ajuste JWT_SECRET se desejar
+# renomeie .env.example para .env
 npm start
 ```
 
@@ -69,5 +69,5 @@ curl http://localhost:4000/private \
 ## Notas
 
 * Token tem `expiresIn` configurado (ex.: 1h).
-* Este projeto usa usuário em memória — troque para banco de dados e hashing de senha para produção.
+* Este projeto usa usuário em memória.
 * Token é salvo no front em `sessionStorage` (conforme `client/src/App.js`).
