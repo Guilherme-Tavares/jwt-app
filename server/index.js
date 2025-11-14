@@ -5,8 +5,8 @@ const cors = require('cors');
 
 
 const app = express();
-const PORT = process.env.PORT || 4000;
-const JWT_SECRET = process.env.JWT_SECRET || 'super_secret_change_me';
+const PORT = process.env.PORT;
+const JWT_SECRET = process.env.JWT_SECRET;
 
 
 // Origem
